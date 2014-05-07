@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Signin Rsync</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src='js/jquery.autosize.js'></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="form-signin">
+        <h2 class="form-signin-heading">Rsync Tools</h2>
+<!--         <input type="text" class="form-control" placeholder="envpath" autofocus id="envpath">
+ -->        <input type="text" class="form-control" placeholder="srcpath" autofocus id="srcpath">
+        <input type="text" class="form-control" placeholder="destpath" autofocus id="destpath">
+        <label class="checkbox">
+          <!-- <input type="checkbox" value="remember-me"> Remember me -->
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="sync_submit">Rsync</button>
+      </div>
+      <div  class="div-msg" id="msg">
+      </div>
+      <div  class="div-output">
+        <textarea id="output"></textarea>
+      </div>
+    </div> <!-- /container -->
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
